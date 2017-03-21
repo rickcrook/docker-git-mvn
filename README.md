@@ -5,6 +5,9 @@ Merge from:
    + https://github.com/carlossg/docker-maven
    + https://github.com/docker-library/docker
 
+## Docker image
+https://hub.docker.com/r/rickcrook/docker-git-mvn/
+
 ## Build
 ```
 $docker build -t docker-git-mvn .
