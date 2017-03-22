@@ -29,8 +29,8 @@ RUN set -x \
     	openjdk8="$JAVA_ALPINE_VERSION" \
     && [ "$JAVA_HOME" = "$(docker-java-home)" ]
 
-# FROM docker-maven
-RUN apk add --no-cache curl tar bash
+# FROM docker-maven & addition of util-linux for uuidgen
+RUN apk add --no-cache curl tar bash util-linux
 
 ARG MAVEN_VERSION=3.3.9
 ARG USER_HOME_DIR="/root"
